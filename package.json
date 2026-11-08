@@ -1,0 +1,48 @@
+{
+	"name": "gentle-shell-classic",
+	"version": "0.4.0",
+	"description": "Community Pi package that brings back the pre-4.6 Gentle Shell look (classic prompt frame and cards) without changing how the shell works.",
+	"license": "MIT",
+	"author": "JlMoreno00 <jose.moga03@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JlMoreno00/gentle-shell-classic.git"
+	},
+	"homepage": "https://github.com/JlMoreno00/gentle-shell-classic#readme",
+	"bugs": {
+		"url": "https://github.com/JlMoreno00/gentle-shell-classic/issues"
+	},
+	"type": "module",
+	"keywords": [
+		"pi-package",
+		"pi",
+		"gentle-shell",
+		"gentle-pi",
+		"theme",
+		"classic"
+	],
+	"files": [
+		"extensions/",
+		"lib/",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"test": "node --experimental-strip-types --test tests/"
+	},
+	"pi": {
+		"extensions": [
+			"./extensions"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": ">=1.2.0",
+		"@earendil-works/pi-tui": "*",
+		"gentle-pi": ">=4.6.0 <4.7.0"
+	},
+	"peerDependenciesMeta": {
+		"gentle-pi": {
+			"optional": true
+		}
+	}
+}
