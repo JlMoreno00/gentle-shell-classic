@@ -1,8 +1,16 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JlMoreno00/gentle-shell-classic/main/docs/banner.png" alt="gentle-shell-classic: the classic Gentle Shell look, back on the new interface" width="100%">
+</p>
+
 # gentle-shell-classic
 
 A community Pi package that brings back the pre-4.6 Gentle Shell look on
 Gentle Shell 4.6.x. By default it only flips switches Gentle Shell already ships.
 An optional experimental editor patch for newer versions is described below.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JlMoreno00/gentle-shell-classic/main/docs/before-after.png" alt="The same session in Gentle Shell 4.6: first with its own IDE-style prompt and status bar, then with gentle-shell-classic restoring the rounded classic prompt frame and neon cards while keeping the Status rail" width="860">
+</p>
 
 ## Compatibility
 
@@ -26,6 +34,10 @@ placement while the patch is active. Set those positions in `/gentle:customize`;
 this package does not change them on these installs, except to restore settings
 from an older classic layout backup.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JlMoreno00/gentle-shell-classic/main/docs/experimental.png" alt="Gentle Shell main without and with the experimental editor patch: with it, the header stays on top, the Status rail stays visible, and the prompt uses the classic neon frame" width="860">
+</p>
+
 ## What comes back
 
 | Element | 4.6 look | Classic look |
@@ -46,6 +58,10 @@ Status is visible. The classic prompt therefore needs one of two layouts:
 
 `top` is the closest match to the 4.5 header on top. Like the 4.5 header, it
 does not show the permission mode (for example `SUPER-YOLO`).
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JlMoreno00/gentle-shell-classic/main/docs/layouts.png" alt="The two layouts on Gentle Shell 4.6: rail keeps the Status rail with the header below the prompt; top puts the header above the conversation and hides the Status rail" width="860">
+</p>
 
 ## What does not come back
 
@@ -83,6 +99,10 @@ gentle-shell install npm:gentle-shell-classic
 
 ## Use
 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JlMoreno00/gentle-shell-classic/main/docs/panel.png" alt="The /gentle-classic panel: Layout and Style settings with a preview line, styled like /gentle:customize" width="760">
+</p>
 Run `/gentle-classic` without arguments to open a panel like `/gentle:customize`.
 Use ↑/↓ to move between settings, ←/→ to choose a value, Enter to apply,
 and Esc to close. On 4.6.x the picker offers Layout and Style. On unified-editor
@@ -130,7 +150,12 @@ anything, matching Gentle Shell's own writers.
 
 ```bash
 npm test
+python3 scripts/docs-images.py <shots-dir>  # regenerate docs/ from captures (Pillow, Inter, JetBrains Mono)
 ```
+
+The screenshots in `docs/` are real captures of Gentle Shell 4.6.0 and Gentle
+Shell main (`db5d6b9`) on Pi 1.4, recorded headless with VHS in an isolated
+home against a local mock model.
 
 ## License
 
