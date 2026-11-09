@@ -1,6 +1,6 @@
 {
 	"name": "gentle-shell-classic",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"description": "Community Pi package that brings back the pre-4.6 Gentle Shell look (classic prompt frame and cards) without changing how the shell works.",
 	"license": "MIT",
 	"author": "JlMoreno00 <jose.moga03@gmail.com>",
